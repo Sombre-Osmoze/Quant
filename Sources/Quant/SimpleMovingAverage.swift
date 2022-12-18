@@ -11,7 +11,8 @@ import Foundation
 public extension RandomAccessCollection where Element: FloatingPoint {
 
 				func simpleMovingAverage() -> Element {
-								precondition(!isEmpty, "can't compute an simple moving average from an empty collection")
+								precondition(!isEmpty,
+																					"can't compute an simple moving average from an empty collection")
 
 								let zero : Element = 0
 								let sum = reduce(zero, +)
