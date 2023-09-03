@@ -8,8 +8,7 @@
 import Foundation
 
 protocol Instrument: Codable {
-	
-				associatedtype Quantity
-				var value: Quantity { get }
-				var code: String { get }
+  associatedtype Quantity
+  var value: Quantity { get }
+  var code: String { get }
 }
